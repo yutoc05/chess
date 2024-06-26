@@ -1,7 +1,7 @@
 # Greenfoot Chess
 Welcome to the Greenfoot Chess game! This project is a chess game implemented in Java using the Greenfoot framework. Players can enjoy a game of chess with features such as castling, en passant, and pawn promotion. Checkmate and stalemate features are coming soon!
 
-![Screenshot of the the Chess game UI within the Greenfoot IDE.](https://github.com/yutoc05/Space-Invaders/assets/70075066/8aa1d830-24f9-4454-b07e-f9b4128c1b8c)
+![Screenshot of the the Chess game UI within the Greenfoot IDE.](https://github.com/yutoc05/Greenfoot-Chess/assets/70075066/ca65609a-bb94-4a9c-9687-b3ca395f3ec2)
 
 ## How It's Made:
 
