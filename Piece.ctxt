@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Piece
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=int\ moveType()
+comment3.params=enPassant
+comment3.target=void\ move(boolean)
+comment4.params=enPassant
+comment4.target=void\ capture(boolean)
+comment5.params=
+comment5.target=boolean\ inCheck()
+numComments=6
