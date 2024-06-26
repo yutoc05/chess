@@ -1,12 +1,29 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all they need to know. The comments should usually include at least:
-------------------------------------------------------------------------
+# Greenfoot Chess
+Welcome to the Greenfoot Chess game! This project is a chess game implemented in Java using the Greenfoot framework. Players can enjoy a game of chess with features such as castling, en passant, and pawn promotion. Checkmate and stalemate features are coming soon!
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+![Screenshot of the the Chess game UI within the Greenfoot IDE.](https://github.com/yutoc05/Space-Invaders/assets/70075066/8aa1d830-24f9-4454-b07e-f9b4128c1b8c)
+
+## How It's Made:
+
+**Tech used:** Java, Greenfoot IDE
+
+## Features
+
+- Complete chess rules implementation
+  - Castling (both kingside and queenside)
+  - En passant
+  - Pawn promotion
+- Intuitive user interface
+- Simple and clean design
+
+## Installation
+
+### Prerequisites
+
+- Greenfoot installed (download from the [Greenfoot site](https://www.greenfoot.org/download))
+
+### Clone the Repository
+
+```sh
+git clone https://github.com/yutoc05/Greenfoot-Chess.git
+cd Greenfoot-Chess
