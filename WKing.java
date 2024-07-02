@@ -18,20 +18,22 @@ public class WKing extends WhitePiece
                     setLocation(currentX, currentY);
                 }
             } else if (canCastleShort && (currentY == getY()) && (currentX < getX())) {
-                if (moveType != 0) {
+                Actor actor = getOneObjectAtOffset(1, 0, WRook.class);
+                if (moveType != 0 && actor != null && actor instanceof WRook) {
                     canCastleShort = false;
                     canCastleLong = false;
                     setLocation(currentX + 2, currentY);
                     currentX = getX();
                     WRook wRook = getWorld().getObjectsAt(7, currentY, WRook.class).get(0);
                     wRook.setLocation(currentX - 1, currentY);
-                    wRook.currentX = wRook.getX();
+                    wRook.currentX = actor.getX();
                     turn *= -1;
                 } else {
                     setLocation(currentX, currentY);
                 }
             } else if (canCastleLong && (currentY == getY()) && (currentX > getX())) {
-                if (moveType != 0) {
+                Actor actor = getOneObjectAtOffset(-2, 0, WRook.class);
+                if (moveType != 0 && actor != null && actor instanceof WRook) {
                     canCastleShort = false;
                     canCastleLong = false;
                     setLocation(currentX - 2, currentY);
