@@ -7,10 +7,6 @@ public class Piece extends Actor
     int colour = 0; // white is 1, black is -1
     int currentX = 0;
     int currentY = 0;
-    public void act()
-    {
-        // Add your action code here.
-    }
 
     public int moveType() { // 0=invalid,1=std move,2=capture
         if (!(this instanceof WKnight) && !(this instanceof BKnight)) {
@@ -87,6 +83,15 @@ public class Piece extends Actor
                 for (BPawn pawn : bPawns) {
                     pawn.enPassantable = false;
                 }
+            }
+            if (getClass() == WKing.class) {
+                WhitePiece.canCastleShort = false;
+                WhitePiece.canCastleLong = false;
+                setLocation(currentX, currentY);
+            } else if (getClass() == BKing.class) {
+                BlackPiece.canCastleShort = false;
+                BlackPiece.canCastleLong = false;
+                setLocation(currentX, currentY);
             }
         } else if (enPassant) {
             try {
@@ -175,6 +180,8 @@ public class Piece extends Actor
     }
 
     public boolean inCheck() {
+        boolean oldWInCheck = WhitePiece.inCheck;
+        boolean oldBInCheck = BlackPiece.inCheck;
         WhitePiece.inCheck = false;
         BlackPiece.inCheck = false;
         int wKingX = getWorld().getObjects(WKing.class).get(0).getX();
@@ -255,8 +262,12 @@ public class Piece extends Actor
             return true;
         }
         if ((turn == 1) && (WhitePiece.inCheck == true)) {
+            WhitePiece.inCheck = oldWInCheck;
+            BlackPiece.inCheck = oldBInCheck;
             return true;
         } else if ((turn == -1) && (BlackPiece.inCheck == true)) {
+            WhitePiece.inCheck = oldWInCheck;
+            BlackPiece.inCheck = oldBInCheck;
             return true;
         } else {
             return false;

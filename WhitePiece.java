@@ -5,10 +5,6 @@ public class WhitePiece extends Piece
     static boolean canCastleShort = true;
     static boolean canCastleLong = true;
     static boolean inCheck = false;
-    public void act()
-    {
-        // Add your action code here.
-    }
 
     public boolean dragging() {
         if (Greenfoot.mousePressed(this) && turn == 1) {

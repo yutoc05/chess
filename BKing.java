@@ -17,7 +17,7 @@ public class BKing extends BlackPiece
                 } else {
                     setLocation(currentX, currentY);
                 }
-            } else if (canCastleShort && (currentY == getY()) && (currentX < getX()) && !inCheck) {
+            } else if (canCastleShort && (currentY == getY()) && (currentX < getX()) && (!inCheck) && (!inCheck())) {
                 Actor actor = getOneObjectAtOffset(1, 0, BRook.class);
                 if (moveType != 0 && actor != null && actor instanceof BRook) {
                     canCastleShort = false;
@@ -31,7 +31,7 @@ public class BKing extends BlackPiece
                 } else {
                     setLocation(currentX, currentY);
                 }
-            } else if (canCastleLong && (currentY == getY()) && (currentX > getX()) && !inCheck) {
+            } else if (canCastleLong && (currentY == getY()) && (currentX > getX()) && (!inCheck) && (!inCheck())) {
                 Actor actor = getOneObjectAtOffset(-2, 0, BRook.class);
                 if (moveType != 0 && actor != null && actor instanceof BRook) {
                     canCastleShort = false;
