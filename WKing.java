@@ -17,7 +17,7 @@ public class WKing extends WhitePiece
                 } else {
                     setLocation(currentX, currentY);
                 }
-            } else if (canCastleShort && (currentY == getY()) && (currentX < getX())) {
+            } else if (canCastleShort && (currentY == getY()) && (currentX < getX()) && !inCheck) {
                 Actor actor = getOneObjectAtOffset(1, 0, WRook.class);
                 if (moveType != 0 && actor != null && actor instanceof WRook) {
                     canCastleShort = false;
@@ -31,7 +31,7 @@ public class WKing extends WhitePiece
                 } else {
                     setLocation(currentX, currentY);
                 }
-            } else if (canCastleLong && (currentY == getY()) && (currentX > getX())) {
+            } else if (canCastleLong && (currentY == getY()) && (currentX > getX()) && !inCheck) {
                 Actor actor = getOneObjectAtOffset(-2, 0, WRook.class);
                 if (moveType != 0 && actor != null && actor instanceof WRook) {
                     canCastleShort = false;

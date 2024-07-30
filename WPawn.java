@@ -20,7 +20,6 @@ public class WPawn extends WhitePiece
                     if (actor != null && actor instanceof BPawn) {
                         BPawn bPawn = (BPawn) actor;
                         if (bPawn.enPassantable) {
-                            getWorld().removeObject(bPawn);
                             move(true);
                         } else {
                             setLocation(currentX, currentY);

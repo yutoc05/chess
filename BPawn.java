@@ -20,7 +20,6 @@ public class BPawn extends BlackPiece
                     if (actor != null && actor instanceof WPawn) {
                         WPawn wPawn = (WPawn) actor;
                         if (wPawn.enPassantable) {
-                            getWorld().removeObject(wPawn);
                             move(true);
                         } else {
                             setLocation(currentX, currentY);

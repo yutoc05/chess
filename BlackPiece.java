@@ -4,6 +4,7 @@ public class BlackPiece extends Piece
     boolean isDragging = false;
     static boolean canCastleShort = true;
     static boolean canCastleLong = true;
+    static boolean inCheck = false;
     public void act()
     {
         // Add your action code here.

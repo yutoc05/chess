@@ -12,8 +12,10 @@ public class MyWorld extends World
         Piece.turn = 1;
         WhitePiece.canCastleShort = true;
         WhitePiece.canCastleLong = true;
+        WhitePiece.inCheck = false;
         BlackPiece.canCastleShort = true;
         BlackPiece.canCastleLong = true;
+        BlackPiece.inCheck = false;
         // Setting up board
         for (int row = 0; row < 4; ++row) {
             for (int col = 0; col < 4; ++col) {
