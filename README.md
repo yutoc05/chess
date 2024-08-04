@@ -27,4 +27,3 @@ Welcome to the Greenfoot Chess game! This project is a chess game implemented in
 
 ```sh
 git clone https://github.com/yutoc05/Greenfoot-Chess.git
-cd Greenfoot-Chess
