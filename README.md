@@ -1,15 +1,10 @@
-# Greenfoot Chess
-Welcome to the Greenfoot Chess game! This project is a chess game implemented in Java using the Greenfoot framework. Players can play a game of chess with features such as castling, en passant, and pawn promotion. Hope you enjoy!
+# Chess
+A chess game implemented in Java using the Greenfoot IDE. Players can play a full game with features such as castling, en passant, and pawn promotion. Hope you enjoy!
 
+## User Interface
 ![Screenshot of the the Chess game UI within the Greenfoot IDE.](https://github.com/yutoc05/Greenfoot-Chess/assets/70075066/ca65609a-bb94-4a9c-9687-b3ca395f3ec2)
 
-
-## How It's Made:
-
-**Tech used:** Java, Greenfoot IDE
-
 ## Features
-
 - Complete chess rules implementation
   - Castling (both kingside and queenside)
   - En passant
@@ -20,10 +15,4 @@ Welcome to the Greenfoot Chess game! This project is a chess game implemented in
 ## Installation
 
 ### Prerequisites
-
-- Greenfoot installed (download from the [Greenfoot site](https://www.greenfoot.org/download))
-
-### Clone the Repository
-
-```sh
-git clone https://github.com/yutoc05/Greenfoot-Chess.git
+- Greenfoot installed (download from their [site](https://www.greenfoot.org/download))
