@@ -45,8 +45,3 @@ This project runs on an 8x8 board (`MyWorld`) and supports turn-based play betwe
 - Click and drag a piece to a target square.
 - Release to attempt the move.
 - Invalid moves are automatically reverted.
-
-## Notes
-
-- This is a local pass-and-play game (no AI and no online multiplayer).
-- The project is intended to be run from Greenfoot rather than a standalone CLI build pipeline.
